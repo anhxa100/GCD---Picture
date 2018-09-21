@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GCD___Picture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jDZ-Ej-GVf" userLabel="Image View 1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="204.5"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JNW-Sk-WKB" userLabel="Image View 2">
+                                <rect key="frame" x="0.0" y="248.5" width="414" height="204.5"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G7A-nf-N0w" userLabel="Image View 4">
+                                <rect key="frame" x="0.0" y="657.5" width="414" height="204.5"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nvA-xw-CAE" userLabel="Image View 3">
+                                <rect key="frame" x="0.0" y="453" width="414" height="204.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JNW-Sk-WKB" firstAttribute="top" secondItem="jDZ-Ej-GVf" secondAttribute="bottom" id="Apz-DM-mrL"/>
+                            <constraint firstItem="G7A-nf-N0w" firstAttribute="trailing" secondItem="FLd-5n-Wos" secondAttribute="trailing" id="BmC-8y-BJL"/>
+                            <constraint firstItem="JNW-Sk-WKB" firstAttribute="height" secondItem="jDZ-Ej-GVf" secondAttribute="height" id="C2y-in-BnN"/>
+                            <constraint firstItem="G7A-nf-N0w" firstAttribute="bottom" secondItem="FLd-5n-Wos" secondAttribute="bottom" id="DGi-wR-pWj"/>
+                            <constraint firstItem="G7A-nf-N0w" firstAttribute="height" secondItem="nvA-xw-CAE" secondAttribute="height" id="FxF-UW-uX5"/>
+                            <constraint firstItem="JNW-Sk-WKB" firstAttribute="trailing" secondItem="FLd-5n-Wos" secondAttribute="trailing" id="K5w-NI-EeW"/>
+                            <constraint firstItem="nvA-xw-CAE" firstAttribute="top" secondItem="JNW-Sk-WKB" secondAttribute="bottom" id="Lnv-M8-15O"/>
+                            <constraint firstItem="jDZ-Ej-GVf" firstAttribute="top" secondItem="FLd-5n-Wos" secondAttribute="top" id="LxZ-xv-yb0"/>
+                            <constraint firstItem="nvA-xw-CAE" firstAttribute="height" secondItem="JNW-Sk-WKB" secondAttribute="height" id="UGy-Mr-wWt"/>
+                            <constraint firstItem="jDZ-Ej-GVf" firstAttribute="leading" secondItem="FLd-5n-Wos" secondAttribute="leading" id="YiI-Hz-E7A"/>
+                            <constraint firstItem="JNW-Sk-WKB" firstAttribute="top" secondItem="jDZ-Ej-GVf" secondAttribute="bottom" id="ZZx-GN-kig"/>
+                            <constraint firstItem="G7A-nf-N0w" firstAttribute="leading" secondItem="FLd-5n-Wos" secondAttribute="leading" id="k75-Wr-sM9"/>
+                            <constraint firstItem="nvA-xw-CAE" firstAttribute="leading" secondItem="FLd-5n-Wos" secondAttribute="leading" id="q1b-94-VsB"/>
+                            <constraint firstItem="JNW-Sk-WKB" firstAttribute="leading" secondItem="FLd-5n-Wos" secondAttribute="leading" id="rs6-RK-eMs"/>
+                            <constraint firstItem="jDZ-Ej-GVf" firstAttribute="trailing" secondItem="FLd-5n-Wos" secondAttribute="trailing" id="ssl-JQ-p6r"/>
+                            <constraint firstItem="G7A-nf-N0w" firstAttribute="top" secondItem="nvA-xw-CAE" secondAttribute="bottom" id="v1D-ls-4XX"/>
+                            <constraint firstItem="nvA-xw-CAE" firstAttribute="trailing" secondItem="FLd-5n-Wos" secondAttribute="trailing" id="wCk-cl-pg9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FLd-5n-Wos"/>
+                    </view>
+                    <connections>
+                        <outlet property="image1" destination="jDZ-Ej-GVf" id="uFv-yX-Etj"/>
+                        <outlet property="image2" destination="JNW-Sk-WKB" id="95Y-Pb-sdY"/>
+                        <outlet property="image3" destination="nvA-xw-CAE" id="rbr-3l-5fk"/>
+                        <outlet property="image4" destination="G7A-nf-N0w" id="bgn-hV-BIv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
